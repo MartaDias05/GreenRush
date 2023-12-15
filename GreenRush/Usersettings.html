@@ -15,25 +15,45 @@
     <link rel="stylesheet" href="style.css" /> 
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo" style="margin-top: 1rem;">
-            <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
+    <div class="settings-user-container">
+        <div class="sidebar">
+            <div class="logo" style="margin-top: 1rem;">
+                <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
+            </div>
+            <div class="sidebar-title">
+                <h3>Settings <i class="fa-solid fa-gear"></i></h3>
+            </div>
+            <hr>
+            <div class="sidebar-list">
+                <button class="sidebar-item selected" onmouseenter="hovering_effect('userSettings')" onmouseleave="reset_hovering_effect('userSettings')" id="userSettings"><h5><i class="fa-solid fa-user"></i> User Settings</h5></button>
+                <button class="sidebar-item" onclick="location.href='PaymentMethod.html'" onmouseenter="hovering_effect('paymentMethod')" onmouseleave="reset_hovering_effect('paymentMethod')" id="paymentMethod"><h5><i class="fa-solid fa-money-check-dollar"></i> Payment Method</h5></button>
+                <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
+                <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
+            </div>
+            <div class="sidebar-leaf"><i class="fa-solid fa-leaf"></i></div>
+            <button class="sidebar-leave" onclick="location.href='index.html'" onmouseenter="hovering_effect('leaveSettings')" onmouseleave="reset_hovering_effect('leaveSettings')" id="leaveSettings"><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
+           
         </div>
-        <div class="sidebar-title">
-            <h3>Settings <i class="fa-solid fa-gear"></i></h3>
+        <div class="settings-user-content">
+            <div class="settings-user-title">
+                <h1>User Settings:</h1>
+            </div>
+           <hr>
+           <div class="settings-user-profile">
+            <div class="settings-user-img">
+                <img src="imgs/default_pfp.jpg">
+                <p style="position: relative; left: 50px;">Your profile picture:</p>
+            </div>
+            <div class="settings-user-info">
+               <h5>Your Username:</h5>
+               <input id="username" type="text" placeholder="UsernameExample123" style= " color: black; background-color: rgb(231, 231, 231); border: 0; border-radius: 30px;"/>
+                <span id="display_username">UsernameExample123</span>
+            </div>
+                
+           </div>
         </div>
-        <hr>
-        <div class="sidebar-list">
-            <button class="sidebar-item selected" onmouseenter="hovering_effect('userSettings')" onmouseleave="reset_hovering_effect('userSettings')" id="userSettings"><h5><i class="fa-solid fa-user"></i> User Settings</h5></button>
-            <button class="sidebar-item" onclick="location.href='PaymentMethod.html'" onmouseenter="hovering_effect('paymentMethod')" onmouseleave="reset_hovering_effect('paymentMethod')" id="paymentMethod"><h5><i class="fa-solid fa-money-check-dollar"></i> Payment Method</h5></button>
-            <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-            <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-        </div>
-        <div class="sidebar-leaf"><i class="fa-solid fa-leaf"></i></div>
-        <button class="sidebar-leave" onclick="location.href='index.html'" onmouseenter="hovering_effect('leaveSettings')" onmouseleave="reset_hovering_effect('leaveSettings')" id="leaveSettings"><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-       
     </div>
-    <h1>User Settings</h1>
+    
 <script src="settings.js"></script>
 </body>
 </html>
