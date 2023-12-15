@@ -179,3 +179,60 @@ header{
     display:flex;
     width: calc(100% - 40px);
 }
+
+
+/* this is the css for the Usersettings.html , etc...*/
+.sidebar {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    height: 59rem;
+    background-color: black;
+}
+.sidebar-list{
+    align-self: center;
+}
+
+.sidebar-item{
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 20rem;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    margin-bottom: 20px;
+}
+.sidebar hr {
+    background-color: white;
+    height: 2px;
+}
+.sidebar-leaf{
+    color: var(--color-green);
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+    rotate: 45deg;
+}
+.sidebar-leave{
+    background-color: #ba4c68;
+    display: flex;
+    border-radius: 5px;
+    width: 20rem;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    margin-bottom: 20px;
+    border-style: none;
+}
+.selected{
+    scale:1.07;
+    background-color: var(--color-green);
+}
