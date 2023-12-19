@@ -42,6 +42,25 @@
                 <div class="header-option">
                     <a href="Usersettings.html"><i class="fa-solid fa-gear"></i></a> 
                 </div>
+                <!--CART-->
+                <div class="shopping-cart" style="transition: .4s linear; background-color: #fff; width: 20rem; display: inline; position: absolute; top: 15%; right: -110%; padding: 1rem; border: 1px solid lightgray; border-radius: 0.5rem;">
+                    <div id="box" class="box">
+                        <div class="content" style="display: flex; align-items: center;">
+                            <div class="cart-img" style="background-image: url(imgs/menu_benshi_m_big_h.jpg);"></div>
+                            <div style="margin-left: 1rem;">
+                                <h3 style="font-size: medium;">MenuBenshi</h3>
+                                <span style="font-size: small;" class="price">Price: xxx</span>
+                                <span style="font-size: small;" class="quantity">Qty: xxx</span>
+                            </div>
+                            <div style="margin-left: 2rem;">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total" style="font-size: 1rem; padding: 1rem 0; text-align: center;">total: xxx</div>
+                    <a href="#" class="btn btn-outline-success" style="font-size: small; cursor: pointer; display: block;">Checkout</a>
+                </div>
             </div>
         </div>
     </header>
@@ -156,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="ramona" class="listings-grid-element">
+                <div id="ramona" class="listings-grid-element" onclick="goToRamona()">
                     <div class="image">
                         <img src="/imgs/ramona.jpeg" alt="ramona" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
                     </div>
@@ -172,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="clandestino" class="listings-grid-element">
+                <div id="clandestino" class="listings-grid-element" onclick="goToClandestino()">
                     <div class="image">
                         <img src="/imgs/clandestino.jpeg" alt="clandestino" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
                     </div>
