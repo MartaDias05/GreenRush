@@ -1,3 +1,4 @@
+var userNameInput = '';
 function addUser(){
     event.preventDefault();
     
@@ -23,7 +24,7 @@ function addUser(){
 function validateForm(){
     event.preventDefault();
 
-    var userNameInput = document.getElementById('username').value;
+    userNameInput = document.getElementById('username').value;
     var passwordInput = document.getElementById('password').value;
 
     console.log(userNameInput);
@@ -42,4 +43,6 @@ function validateForm(){
         alert('Wrong password!')
     }
 }
+
+
 
