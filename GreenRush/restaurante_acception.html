@@ -13,25 +13,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body>
-    <header class="mb-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo" id="logo" onclick="goToMain()">
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="logo" style="margin-top: 1rem;">
                 <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
             </div>
-            <div class="currentDetails d-flex">
-                <div class="header-option me-3">
+            <div class="currentDetails">
+                <div class="header-option">
                     <i class="fa-solid fa-location-dot"></i> Aveiro
                 </div>
                 <div class="header-option">
                     <i class="fa-solid fa-cart-shopping"></i> Cart
                 </div>
             </div>
-            <div class="searchBar d-flex">
-                <div class="header-option me-3">
+            <div class="searchBar">
+                <div class="header-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input id="searchInput" type="text" placeholder="Food, drinks, etc." class="form-control" style="border-radius: 30px;" />
+                    <input id="find" onkeyup="search()" type="text" placeholder="Food, drinks, etc." style=" color: black; background-color: rgb(231, 231, 231); border: 0; border-radius: 30px; padding: 0.3rem;" />
                 </div>
                 <div class="header-option">
                     <i class="fa-solid fa-user"></i>
@@ -42,7 +45,7 @@
     </header>
 
     <div class="container">
-        <h1 class="pt-5 fw-bold">New offer!</h1>
+        <h1 class="pt-5 fw-bold">New order!</h1>
     </div>
 
     <div class="container-fluid bg-success p-3 pt-3">
@@ -51,16 +54,19 @@
             <!-- Briefcase Icon Column -->
             <div class="col-md-4">
                 <!-- Adjusted the width to col-md-4 -->
-                <i class="fa-solid fa-briefcase fa-10x text-dark"></i>
+                <img src="https://media.discordapp.net/attachments/1167570060873834628/1181303756806168666/menu_benshi_m_big_h.jpg?ex=659306db&is=658091db&hm=d070217cf6a12bab66a3dbce3115c8e48eb2154247805894b9522943016040e4&=&format=webp&width=531&height=353" style="width:250px; border-radius: 7px" />
             </div>
 
             <!-- Text Column -->
             <div class="col-md-4 pt-3 align-items-center">
                 <p class="mt-3">
-                    <i class="fa-solid fa-location-dot text-dark"></i> Restaurante: Subenshi
+                    <i class="fa-solid fa-bag-shopping text-dark"></i> Artigo: Menu Benshi
                 </p>
                 <p>
-                    <i class="fa-solid fa-bag-shopping text-dark"></i> Local da entrega: Rua da Santa Joana, 14
+                    <i class="fa fa-calculator"></i> Quantidade : 1
+                </p>
+                <p>
+                    <i class="fa fa-pen"></i> Instruções especiais : --None--
                 </p>
             </div>
 
