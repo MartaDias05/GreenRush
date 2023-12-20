@@ -1,3 +1,4 @@
+/*
 function checkLogin(){
     console.log("check login called")
 var user = localStorage.getItem('users')
@@ -40,6 +41,7 @@ if(checkLogin()===true){
  }
 
 }
+*/
 
 function hovering_effect(value){
     document.getElementById(value).style.transform = 'scale(1.07)';
@@ -146,6 +148,7 @@ function goToAddProduct(){
 
 let shoppingCart = document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick = () => {
+    console.log('here');
     shoppingCart.classList.toggle('active');
     if (shoppingCart.classList.contains('active')) {
         shoppingCart.style.right = '2rem';
@@ -155,8 +158,9 @@ document.querySelector('#cart-btn').onclick = () => {
     }
 }
 
-var quantity = 1;
-const quantityInput = document.getElementById('quantityInput');
+var quantity = 0;
+var quantityInput = document.getElementById('quantityInput');
+console.log(quantityInput);
 var priceOfProduct = parseFloat(document.getElementById('price').innerHTML);
 console.log(priceOfProduct);
 var totalProductPrice = 0;
