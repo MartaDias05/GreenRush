@@ -62,8 +62,43 @@
                     <div class="total" style="font-size: 1rem; padding: 1rem 0; text-align: center;">total: xxx</div>
                     <a href="#" class="btn btn-outline-success" style="font-size: small; cursor: pointer; display: block;">Checkout</a>
                 </div>
-                <div class="notifications">
-                    
+                <div class="notifications" style="margin-left: 7rem;">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Notifications
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="fa-solid fa-briefcase text-dark"></i>
+                                        New offer!
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="mt-3">
+                                        <i class="fa-solid fa-location-dot text-dark"></i> Restaurante: Subenshi
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-bag-shopping text-dark"></i> Local da entrega: Rua da Santa Joana, 14
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Accept?</p>
+                                    <button class="btn btn-success btn-lg mt-3" onclick="goToAccept()">
+                                        <i class="fa-solid fa-check text-light"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-lg mt-3 ms-3" data-bs-dismiss="modal">
+                                        <i class="fa-solid fa-xmark text-light"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,6 +110,7 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>

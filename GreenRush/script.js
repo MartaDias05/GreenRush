@@ -144,6 +144,10 @@ function goToAddProduct(){
     location.replace('addProduct.html')
 }
 
+function goToAccept(){
+    
+}
+
 
 let shoppingCart = document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick = () => {
