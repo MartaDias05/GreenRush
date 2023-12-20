@@ -185,3 +185,8 @@ body {
     padding: 10px;
 
 }
+.list-group-item.active{
+background-color: var(--color-green);
+border-style: none;
+
+}
