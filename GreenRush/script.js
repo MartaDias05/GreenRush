@@ -1,4 +1,3 @@
-/*
 function checkLogin(){
     console.log("check login called")
 var user = localStorage.getItem('users')
@@ -41,7 +40,7 @@ if(checkLogin()===true){
  }
 
 }
-*/
+
 
 function hovering_effect(value){
     document.getElementById(value).style.transform = 'scale(1.07)';
