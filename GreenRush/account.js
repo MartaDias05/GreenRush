@@ -40,6 +40,7 @@ function validateForm() {
         alert('That username does not exist!');
     } else if (userNameInput === user.username && passwordInput === user.password) {
         location.replace('index.html');
+        localStorage.clear();
     } else {
         alert('Wrong password!');
     }
