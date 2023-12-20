@@ -1,4 +1,4 @@
-function checkLogin(){
+/*function checkLogin(){
     console.log("check login called")
 var user = localStorage.getItem('users')
 if(user != null){
@@ -40,7 +40,7 @@ if(checkLogin()===true){
  }
 
 }
-
+*/
 
 function hovering_effect(value){
     document.getElementById(value).style.transform = 'scale(1.07)';
@@ -145,9 +145,8 @@ function goToAddProduct(){
 }
 
 function goToAccept(){
-    
+    location.replace('atualization_est.html');
 }
-
 
 let shoppingCart = document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick = () => {
