@@ -1,45 +1,46 @@
-function addUser(){
+function addUser() {
     event.preventDefault();
-    
+
     var userNameInput = document.getElementById('username-created').value;
     var passwordInput = document.getElementById('password-created').value;
     var locationInput = document.getElementById('location-created').value;
 
-    // Do this to add a new user to the database;
-    var user = {
-        username : userNameInput,
-        password : passwordInput, 
-        location : locationInput,  
-    };
+    // Retrieve the existing user data from local storage
+    var users = JSON.parse(localStorage.getItem('users')) || [];
 
-    var jsonUser = JSON.stringify(user);
-    console.log(jsonUser);
-    localStorage.setItem(userNameInput, jsonUser);
+    // Add a new user to the array
+    var user = {
+        username: userNameInput,
+        password: passwordInput,
+        location: locationInput,
+        bio: ''
+    };
+    users.push(user);
+
+    // Save the updated user array back to local storage
+    localStorage.setItem('users', JSON.stringify(users));
+
     console.log('user added');
     location.replace('login.html');
 }
 
-
-function validateForm(){
+function validateForm() {
     event.preventDefault();
 
     var userNameInput = document.getElementById('username').value;
     var passwordInput = document.getElementById('password').value;
 
-    console.log(userNameInput);
-    console.log(passwordInput);
+    // Retrieve the user array from local storage
+    var users = JSON.parse(localStorage.getItem('users')) || [];
 
-    var user = localStorage.getItem(userNameInput);
-    console.log(user);
-    var data = JSON.parse(user);
-    console.log(data);
+    // Find the user with the specified username
+    var user = users.find(u => u.username === userNameInput);
 
-    if (user == null){
+    if (user === undefined) {
         alert('That username does not exist!');
-    }else if (userNameInput == data.username && passwordInput == data.password) {
+    } else if (userNameInput === user.username && passwordInput === user.password) {
         location.replace('index.html');
-    }else{
-        alert('Wrong password!')
+    } else {
+        alert('Wrong password!');
     }
 }
-

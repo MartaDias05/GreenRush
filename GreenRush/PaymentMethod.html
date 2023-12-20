@@ -12,28 +12,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="settingsStyle.css" /> 
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo" style="margin-top: 1rem;">
-            <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
+    <div class="settings-user-container">
+        <div class="sidebar">
+            <div class="logo" style="margin-top: 1rem;">
+                <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
+            </div>
+            <div class="sidebar-title">
+                <h3>Settings <i class="fa-solid fa-gear"></i></h3>
+            </div>
+            <hr>
+            <div class="sidebar-list">
+                <button class="sidebar-item" onclick="location.href='Usersettings.html'" onmouseenter="hovering_effect('userSettings')" onmouseleave="reset_hovering_effect('userSettings')" id="userSettings"><h5><i class="fa-solid fa-user"></i> User Settings</h5></button>
+                <button class="sidebar-item selecionado" onmouseenter="hovering_effect('paymentMethod')" onmouseleave="reset_hovering_effect('paymentMethod')" id="paymentMethod"><h5><i class="fa-solid fa-money-check-dollar"></i> Payment Method</h5></button>
+                <button class="sidebar-item" onclick="location.href='accountType.html'" onmouseenter="hovering_effect('accountType')" onmouseleave="reset_hovering_effect('accountType')" id="accountType"><h5><i class="fa-solid fa-key"></i> Account type</h5></button>
+            </div>
+            <div class="sidebar-leaf"><i class="fa-solid fa-leaf"></i></div>
+            <button class="sidebar-leave" onclick="location.href='index.html'" onmouseenter="hovering_effect('leaveSettings')" onmouseleave="reset_hovering_effect('leaveSettings')" id="leaveSettings"><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
+           
         </div>
-        <div class="sidebar-title">
-            <h3>Settings <i class="fa-solid fa-gear"></i></h3>
+    <div class="settings-user-content">
+        <div class="settings-user-title">
+            <h1>Payment Method:</h1>
         </div>
-        <hr>
-        <div class="sidebar-list">
-            <button class="sidebar-item" onclick="location.href='UserSettings.html'" onmouseenter="hovering_effect('userSettings')" onmouseleave="reset_hovering_effect('userSettings')" id="userSettings"><h5><i class="fa-solid fa-user"></i> User Settings</h5></button>
-            <button class="sidebar-item selected" onmouseenter="hovering_effect('paymentMethod')" onmouseleave="reset_hovering_effect('paymentMethod')" id="paymentMethod"><h5><i class="fa-solid fa-money-check-dollar"></i> Payment Method</h5></button>
-            <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-            <button class="sidebar-item" onclick="location.href='index.html'" onmouseenter="hovering_effect('')" onmouseleave="reset_hovering_effect('')" id=""><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-        </div>
-        <div class="sidebar-leaf"><i class="fa-solid fa-leaf"></i></div>
-        <button class="sidebar-leave" onclick="location.href='index.html'" onmouseenter="hovering_effect('leaveSettings')" onmouseleave="reset_hovering_effect('leaveSettings')" id="leaveSettings"><h5><i class="fa-solid fa-door-open"></i> Leave Settings</h5></button>
-       
+       <hr>
     </div>
-    <h1>User Settings</h1>
-<script src="settings.js"></script>
+<script src="Paymentsettings.js"></script>
 </body>
 </html>

@@ -1,0 +1,187 @@
+/* this is the css for the Usersettings.html , etc...*/
+:root {
+    --color-green: #c6e8bc;
+    --color-gray: rgb(231, 231, 231);
+    --color-darkGray : rgb(84,84,84);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+.settings-user-container{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+}
+.sidebar {
+    color: var(--color-gray);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    height: 944px;
+    background-color: black;
+}
+.sidebar-list{
+    align-self: center;
+}
+.sidebar-item.selecionado{
+    border: 2px solid var(--color-green);
+    scale:1.07;
+    color: var(--color-green);
+}
+.sidebar-item {
+    display: flex;
+    background-color: transparent; /* Set to transparent */
+    color: white;
+    border: 2px solid var(--color-gray); /* Add a border with the color you have now */
+    border-radius: 30px;
+    width: 320px;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+.sidebar hr {
+    background-color: white;
+    height: 2px;
+}
+.sidebar-leaf{
+    color: var(--color-green);
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+    rotate: 45deg;
+}
+.sidebar-leave{
+    color: #ba4c68;
+    display: flex;
+    background-color: transparent; /* Set to transparent */
+    border: 2px solid #ba4c68; /* Add a border with the color you have now */
+    border-radius: 30px;
+    width: 320px;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.settings-user-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.settings-user-profile {
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-right: 100px;
+    border-radius: 50px;
+    border: solid var(--color-green);
+    display: flex; /* Use flex display to align items horizontally */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.settings-user-content hr{
+    
+    height: 2px;
+    background-color: black;
+}
+.settings-user-title{
+    display: flex;
+    width: 100%;
+    height: 114px;
+    align-items: center;
+    justify-content: center;
+}
+.settings-user-img{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.settings-user-img img{
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+}
+
+.save-button{
+    display: flex;
+    background-color: var(--color-gray);
+    color: black;
+    border-radius: 30px;
+    width: 140px;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.password-button{
+    background-color: var(--color-gray);
+    color: black;
+    border-radius: 15px; 
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    height: 40px;
+    width: 40px;
+}
+.settings-user-info{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.mid-of-square {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-of-square {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 30px;
+    position: relative;
+    bottom: 37px;
+}
+
+.bottom-square {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center horizontally */
+    margin-left: 100px; /* Adjust margin-left as needed */
+}
+.select-button {
+    border: solid 1px black;
+    display: flex;
+    background-color: transparent;
+    color: black;
+    border-radius: 30px;
+    width: 140px;   
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}

@@ -1,3 +1,53 @@
+function checkLogin(){
+    console.log("check login called")
+var user = localStorage.getItem('users')
+if(user != null){
+    return true;
+}
+else{
+if(user[0].username != null && user[0].password!= null){
+    return true;
+}
+else{
+    console.log("de-mos falso L")
+    return false;
+}
+}
+}
+
+checkLogin();
+
+if(checkLogin()===true){
+    console.log("ao menos chegou aqui")
+ // Get user data from localStorage
+ var user = JSON.parse(localStorage.getItem('users')) || [];
+
+ // Get the login link and icon elements
+ var loginLink = document.getElementById('login');
+ var login = document.getElementById('idLink')
+
+ // Check if a user is logged in
+ if (user.length !== 0) {
+    console.log("devia de mudar o texto e o link estou ca dentro")
+     // Set the text to the username and remove the href attribute
+     loginLink.textContent = user[0].username;
+     login.removeAttribute('href');
+     login.setAttribute('href','Usersettings.html')
+ } else {
+     // Reset the text and add the href attribute
+     loginLink.textContent = 'Log in';
+     login.setAttribute('href', 'login.html');
+ }
+
+}
+
+function hovering_effect(value){
+    document.getElementById(value).style.transform = 'scale(1.07)';
+}
+function reset_hovering_effect(value){
+    document.getElementById(value).style.transform = 'scale(1.0)';
+}
+
 function goToSubenshi() {
     location.replace("subenshi.html")
 }
@@ -184,3 +234,4 @@ function search() {
         }
     }
 }
+
