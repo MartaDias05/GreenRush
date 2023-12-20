@@ -1,4 +1,4 @@
-function addUser() {
+function addUser(){
     event.preventDefault();
 
     var userNameInput = document.getElementById('username-created').value;
@@ -27,7 +27,7 @@ function addUser() {
 function validateForm() {
     event.preventDefault();
 
-    var userNameInput = document.getElementById('username').value;
+    userNameInput = document.getElementById('username').value;
     var passwordInput = document.getElementById('password').value;
 
     // Retrieve the user array from local storage
@@ -44,3 +44,4 @@ function validateForm() {
         alert('Wrong password!');
     }
 }
+

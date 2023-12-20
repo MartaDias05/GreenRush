@@ -202,7 +202,7 @@ function addToCart(img, name, id){
 
     //--- Adiciona uma nova linha ao elemento <div id="tasks"></div>
     document.getElementById('box').innerHTML += '<div id="'+id+'" class="content" style="display: flex; align-items: center;">' + 
-    '<div class="cart-img" style="background-image: url(' + img + ');"></div>' + 
+    '<div class="cart-img" style="background-image: url(./' + img + ');"></div>' + 
     '<div style="margin-left: 1rem;">' + 
     '<h3 style="font-size: medium;">' + name + '</h3>' + 
     '<span style="font-size: small; margin-right: 10px;" class="price">Price: ' + totalProductPrice + '</span>' +
