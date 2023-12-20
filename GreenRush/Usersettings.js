@@ -67,7 +67,7 @@ function updateButtonHref() {
     const localStorageValue = localStorage.getItem('acctype');
 
     // Get the button element
-    const button = document.getElementById('leaveSettings');
+    const button = document.getElementById('leaveSettings')
 
     // Check the localStorage value and update the href accordingly
     if (localStorageValue === 'courier') {
