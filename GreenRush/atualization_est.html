@@ -48,7 +48,7 @@
     <!--header-->
     <header>
         <div class="container">
-            <div class="logo" style="margin-top: 1rem;">
+            <div class="logo" style="margin-top: 1rem;" onclick="goToMainEst()">
                 <h1>Green<span style="color:#c6e8bc; font-weight: 800;">Rush</span></h1>
             </div>
             <div class="currentDetails">
@@ -100,5 +100,10 @@
             <button class="custom-button btn btn-md btn-block mt-4">Submit</button>
         </form>
     </div>
+    <script>
+        function goToMainEst(){
+            location.replace('est_index.html');
+        };
+    </script>
 </body>
 </html>
