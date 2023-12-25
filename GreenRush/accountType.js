@@ -29,7 +29,7 @@ function updateButtonHref() {
     changeButtonStyle(localStorageValue)
     // Check the localStorage value and update the href accordingly
     if (localStorageValue === 'courier') {
-        button.href = '';
+        button.href = 'est_index.html';
     } else if (localStorageValue === 'restaurant') {
         button.href='restaurant.html';
     } else {
