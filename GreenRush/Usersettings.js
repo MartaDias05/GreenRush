@@ -71,13 +71,27 @@ function updateButtonHref() {
 
     // Check the localStorage value and update the href accordingly
     if (localStorageValue === 'courier') {
-        button.href = '';
+        button.href = 'est_index.html';
     } else if (localStorageValue === 'restaurant') {
-        button.href = '';
+        button.href = 'restaurant.html';
     } else {
         // Default href if the localStorage value is not recognized
         button.href = 'index.html';
     }
 }
+
+function typeButton(buttonId){
+    changeButtonStyle(buttonId)
+    resetOtherButtons(buttonId)
+    if(buttonId==='client'){
+        beClient();
+    }
+    if(buttonId==='courier'){
+        beCourier();
+    }
+    if(buttonId==='restaurant'){
+        beRestaurant();
+    }
+    }
 
 getAll()
