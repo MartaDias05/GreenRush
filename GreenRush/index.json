@@ -1,0 +1,26 @@
+[
+    {
+        "image" : "./imgs/subenshi.jpeg",
+        "name" : "Subenshi", 
+        "description" : "€0.90 Delivery fee · 30-50 MINS · €",
+        "rating" : "4.8"
+    },
+    {
+        "image" : "./imgs/ramona.jpeg",
+        "name" : "Ramona", 
+        "description" : "€1.20 Delivery fee · 20-35 MINS · €",
+        "rating" : "4.4"
+    }, 
+    {
+        "image" : "./imgs/clandestino.jpeg",
+        "name" : "Clandestino", 
+        "description" : "€1.90 Delivery fee · 35-45 MINS · €",
+        "rating" : "4.5"
+    },
+    {
+        "image" : "./imgs/pizzarte.png",
+        "name" : "Pizzarte", 
+        "description" : "€0.90 Delivery fee · 30-50 MINS · €",
+        "rating" : "4.6"
+    }
+]
