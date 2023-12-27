@@ -31,7 +31,7 @@ document.getElementById('product-body').innerHTML += `
                 </h2>
             </div>
             <p style="color: rgb(128, 128, 128)">
-                <span id="price value="${selectedProduct.price}">€${selectedProduct.price}</span>
+                <span id="price" value="${selectedProduct.price}">€${selectedProduct.price}</span>
             </p>
             <p>
                 ${selectedProduct.description}

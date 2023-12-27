@@ -181,7 +181,7 @@ var quantity = parseInt(localStorage.getItem('quantity')) || 0;
 var quantityInput = document.getElementById('quantityInput');
 updateQuantity();
 console.log(quantityInput);
-var priceOfProduct = parseFloat(document.getElementById('price').value);
+var priceOfProduct = parseFloat(selectedProduct.price);
 console.log(priceOfProduct);
 
 var totalProductPrice = 0;
