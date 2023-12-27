@@ -40,6 +40,7 @@
                     <i class="fa-solid fa-plus"></i>
                     Add product
                 </button>
+               
                 
                 
                 <!-- Modal -->
@@ -67,25 +68,57 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal(myModal)">Close</button>
                         <button type="button" class="btn btn-primary" onclick="addProduct()">Add Product</button>
                         </div>
+                       
                         
                     </div>
                     </div>
                 </div>
             </div>
-
-            <div class="header-option">
-                <button type="button" class="btn btn-outline-primary" onclick="goToAcceptRestaurant()">
-                    Notifications
-                </button>
-            </div>
-
-
             <div>
                 <div class="header-option" style="cursor: pointer;">
                     <a href="Usersettings.html"><i class="fa-solid fa-gear"></i></a> 
                 </div>
             </div>
         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa-solid fa-briefcase text-dark"></i>
+                            New offer!
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mt-3">
+                            <i class="fa-solid fa-bag-shopping"></i> Artigo: Menu Benshi
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-calculator"></i> Quantity: 1
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-calculator"></i> Special instructions: --None--
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Accept?</p>
+                        <button class="btn btn-success btn-lg mt-3" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-check text-light"></i>
+                        </button>
+                        <button class="btn btn-danger btn-lg mt-3 ms-3" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-xmark text-light"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</header>
+
     </header>
 
     <div class="bannerSubenshi"></div>
