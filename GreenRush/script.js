@@ -59,10 +59,6 @@ function reset_hovering_effect(value){
     document.getElementById(value).style.transform = 'scale(1.0)';
 }
 
-function goToSubenshi() {
-    location.replace("subenshi.html")
-}
-
 function goToMain() {
     location.replace('index.html')
 }
@@ -71,82 +67,6 @@ function goToRestaurantDetails() {
     location.replace('restaurantDetails.html')
 }
 
-function goToMenuBenshi() {
-    location.replace('menuBenshi.html')
-}
-
-function goToMenuKaishi() {
-    location.replace('menuKaishi.html')
-}
-
-function goToFonteNova() {
-    location.replace('fonteNova.html')
-}
-
-function goToMoliceiro() {
-    location.replace('moliceiro.html')
-}
-
-function goToFusion() {
-    location.replace('fusion.html')
-}
-
-function goToSashimiSingle() {
-    location.replace('sashimi.html')
-}
-
-function goToRedEyes() {
-    location.replace('redEyes.html')
-}
-
-function goToGambas() {
-    location.replace('gambas.html')
-}
-
-
-function goToRamona(){
-    location.replace('ramona.html')
-}
-
-function goToBatatas(){
-    location.replace('batatas.html')
-}
-
-function goToRamonaBurger(){
-    location.replace('ramonaHamburguer.html')
-}
-
-function goToVeggie(){
-    location.replace('veggieHamburger.html')
-}
-
-function goToMisto(){
-    location.replace('misto.html')
-}
-
-function goToRamonaOvo(){
-    location.replace('ovoRamonaHamburguer.html')
-}
-
-function goToClandestino(){
-    location.replace('clandestino.html')
-}
-
-function goToPrego(){
-    location.replace('bitoque.html')
-}
-
-function goToFrancesinha(){
-    location.replace('francesinha.html')
-}
-
-function goToCalzone(){
-    location.replace('calzone.html')
-}
-
-function goToPrego(){
-    location.replace('prego.html')
-}
 
 //JS for the cart:
 

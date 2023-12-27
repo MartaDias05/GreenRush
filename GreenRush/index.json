@@ -137,6 +137,7 @@
         "image" : "./imgs/clandestino.jpeg",
         "name" : "Clandestino", 
         "description" : "€1.90 Delivery fee · 35-45 MINS · €",
+        "bio" : "4.5 (170 ratings) · For all ·  €€ ",
         "rating" : "4.5",
         "featuredItems" : [
             {
@@ -203,7 +204,68 @@
         "image" : "./imgs/pizzarte.png",
         "name" : "Pizzarte", 
         "description" : "€0.90 Delivery fee · 30-50 MINS · €",
-        "rating" : "4.6"
+        "bio" : "4.6 (98 ratings) · Italian ·  €€ ",
+        "rating" : "4.6",
+        "featuredItems" : [
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0304004.jpg",
+                "id" : "leVeau",
+                "name" : "Crepe LE VEAU",
+                "price" : 9.50,
+                "description" : "Qj Mozzarela, Bolognese, Cenoura, Espinafres, natas"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0509001.jpg",
+                "id" : "MARGHERITA",
+                "name" : "Pizza MARGHERITA",
+                "price" : 6.85,
+                "description" : "Qj Mozzarela, Oregãos, Tomate (polpa)"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0406003.jpg",
+                "id" : "carbonara",
+                "name" : "Massa Carbonara",
+                "price" : 9.75,
+                "description" :"Fiambre, Cogumelos, Gema de ovo, natas, Massa Spaghetti"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0509003.jpg",
+                "id" : "OCCHIO",
+                "name" : "Pizza OCCHIO",
+                "price" : 8.50,
+                "description" : "Qj Mozzarela, Oregãos, Tomate (polpa), Fiambre, Gema de ovo"
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0406003.jpg",
+                "id" : "carbonara",
+                "name" : "Massa Carbonara",
+                "price" : 9.75,
+                "description" :"Fiambre, Cogumelos, Gema de ovo, natas, Massa Spaghetti"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0509003.jpg",
+                "id" : "OCCHIO",
+                "name" : "Pizza OCCHIO",
+                "price" : 8.50,
+                "description" : "Qj Mozzarela, Oregãos, Tomate (polpa), Fiambre, Gema de ovo"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0304004.jpg",
+                "id" : "leVeau",
+                "name" : "Crepe LE VEAU",
+                "price" : 9.50,
+                "description" : "Qj Mozzarela, Bolognese, Cenoura, Espinafres, natas"
+            },
+            {
+                "image" : "https://www.shop.pizzarte.pt/ic/0509001.jpg",
+                "id" : "MARGHERITA",
+                "name" : "Pizza MARGHERITA",
+                "price" : 6.85,
+                "description" : "Qj Mozzarela, Oregãos, Tomate (polpa)"
+            }
+        ]
     }
 ]
 

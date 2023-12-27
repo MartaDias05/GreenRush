@@ -19,7 +19,7 @@ for (let featuredItem of selectedRestaurant.featuredItems){
     restaurantDetFI += `
         <div id="${featuredItem.id}" class="listings-grid-element" onclick="loadProduct('${featuredItem.id}')">
             <div class="image">
-                <img src="${featuredItem.image}" alt="${featuredItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
+                <img src="${featuredItem.image}" alt="${featuredItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;" id="${featuredItem.name}" onmouseenter="hovering_effect('${featuredItem.name}')" onmouseleave="reset_hovering_effect('${featuredItem.name}')">
             </div>
             <div style="padding: 1rem 0; margin-top: 1rem; display: flex; align-items: center; border-bottom: 1px solid #ddd;" class="text">
                 <div class="text-title">
@@ -38,13 +38,13 @@ for (let p4yItem of selectedRestaurant.pickedForYou){
     restaurantDetP4Y += `
         <div id="${p4yItem.id}" class="listings-grid-element" onclick="loadProduct('${p4yItem.id}')">
             <div class="image">
-                <img src="${p4yItem.image}" alt="${p4yItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
+                <img src="${p4yItem.image}" alt="${p4yItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;" id="${p4yItem.name}" onmouseenter="hovering_effect('${p4yItem.name}')" onmouseleave="reset_hovering_effect('${p4yItem.name}')">
             </div>
             <div style="padding: 1rem 0; margin-top: 1rem; display: flex; align-items: center; border-bottom: 1px solid #ddd;" class="text">
                 <div class="text-title">
                     <h5>${p4yItem.name}</h5>
                     <div class="info">
-                        <span style="font-size: small; color: rgb(84, 84, 84);">${p4yItem.price}</span>
+                        <span style="font-size: small; color: rgb(84, 84, 84);">€${p4yItem.price}</span>
                     </div>
                 </div>
             </div>

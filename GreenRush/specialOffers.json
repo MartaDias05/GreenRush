@@ -1,7 +1,7 @@
 [
     {
         "image":"./imgs/pizzahut.jpeg",
-        "name":"Pizzahut(Fórum de Aveiro)",
+        "name":"Pizzahut",
         "description":"€2.40 Delivery fee · 20-35 MINS · €",
         "bio" : "4.5 (132 ratings) · Pizza ·  €€",
         "rating":"4.5",
@@ -68,7 +68,7 @@
     },
     {
         "image" : "./imgs/kyotohouse.jpeg",
-        "name" : "Kyoto House", 
+        "name" : "KyotoHouse", 
         "description":"€1.90 Delivery fee · 20-35 MINS · €",
         "bio" : "4.7 (89 ratings) · Japanese ·  €€ ",
         "rating" : "4.7",
@@ -135,7 +135,7 @@
     }, 
     {
         "image":"./imgs/lamozzarella.jpeg",
-        "name":"La Mozzarella",
+        "name":"LaMozzarella",
         "description":"€1.20 Delivery fee · 35-45 MINS · €",
         "bio" : "4.7 (214 ratings) · Italian ·  €€ ",
         "rating":"4.7",
@@ -202,7 +202,7 @@
     },
     {
         "image":"./imgs/abilioFrangos.jpeg",
-        "name":"Abílio Marques",
+        "name":"AbílioMarques",
         "description":"€1.40 Delivery fee · 20-35 MINS · €",
         "bio" : "4.5 (53 ratings) · Barbecue and Portuguese cuisine ·  €€ ",
         "rating":"4.5",

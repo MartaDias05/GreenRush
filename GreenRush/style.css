@@ -160,6 +160,47 @@ header{
     background-position: center center;
 }
 
+.bannerPizzarte{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://climar.pt/wp-content/uploads/2022/07/climar_pizzart_03-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerPizzahut{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://res.cloudinary.com/tf-lab/image/upload/restaurant/848b8c7c-253c-48a1-814d-e24dbde08494/43811f48-d168-4260-b226-4e01eaa550d1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerKyotoHouse{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0c/e1/74/e2/kyoto-house.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerLaMozzarella{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://www.lamozzarellaaveiro.pt/wp-content/uploads/2020/05/banner-loja.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerAbílioMarques{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/1d/8f/4e/db/o-nosso-leitao.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
 #restaurant-top {
     margin-top: 1rem;
 }
