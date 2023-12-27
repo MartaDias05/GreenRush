@@ -7,7 +7,9 @@ let restaurantDetP4Y = "";
 selectedRestaurant = JSON.parse(localStorage.getItem('selectedRestaurant'));
 console.log(selectedRestaurant);
 
-document.getElementById('banner').classList.add('banner' + selectedRestaurant.name);
+let restaurantClassName = selectedRestaurant.name.replace(/\s+/g, '-');
+
+document.getElementById('banner').classList.add('banner' + restaurantClassName);
 document.getElementById('header-restaurant-name').innerHTML = selectedRestaurant.name;
 document.getElementById('restaurant-info').innerHTML = selectedRestaurant.bio;
 

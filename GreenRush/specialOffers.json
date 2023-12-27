@@ -7,14 +7,14 @@
         "rating":"4.5",
         "featuredItems" : [
             {
-                "image" : ".imgs/margarita_pizzahut.jpg",
+                "image" : "./imgs/margarita_pizzahut.jpg",
                 "id" : "margarita",
                 "name" : "Margarita",
                 "price" : 7.45,
                 "description" : "Molho de Tomate, Queijo 100% Mozzarella e Orégãos (imagem ilustrativa)."
             },
             {
-                "image" : "./imgs/cheeeseham_pizzahut.jpg",
+                "image" : "./imgs/cheeseham_pizzahut.jpg",
                 "id" : "cheeseham",
                 "name" : "CheeseHam",
                 "price" : 9.45,
@@ -70,8 +70,8 @@
         "image" : "./imgs/kyotohouse.jpeg",
         "name" : "Kyoto House", 
         "description":"€1.90 Delivery fee · 20-35 MINS · €",
-        "rating" : "4.7",
         "bio" : "4.7 (89 ratings) · Japanese ·  €€ ",
+        "rating" : "4.7",
         "featuredItems" : [
             {
                 "image" : "./imgs/nigiri_kyotohouse.jpg",
@@ -137,8 +137,8 @@
         "image":"./imgs/lamozzarella.jpeg",
         "name":"La Mozzarella",
         "description":"€1.20 Delivery fee · 35-45 MINS · €",
-        "rating":"4.7",
         "bio" : "4.7 (214 ratings) · Italian ·  €€ ",
+        "rating":"4.7",
         "featuredItems" : [
             {
                 "image" : "./imgs/4estaçoes_lamozarella.webp",
@@ -185,7 +185,7 @@
                 "description" : "ESPARGUETE, CARNE BOLONHESA, PARMESÃO, AZEITE E FOLHA DE MANJERICÃO"
             },
             {
-                "image" : "./imgs/macarraoalpesto_mozarella.webp",
+                "image" : "./imgs/macarrao_lamozarella.webp",
                 "id" : "macarraoPesto",
                 "name" : "Macarrão al Pesto",
                 "price" : 8.90,
@@ -204,8 +204,8 @@
         "image":"./imgs/abilioFrangos.jpeg",
         "name":"Abílio Marques",
         "description":"€1.40 Delivery fee · 20-35 MINS · €",
-        "rating":"4.5",
         "bio" : "4.5 (53 ratings) · Barbecue and Portuguese cuisine ·  €€ ",
+        "rating":"4.5",
         "featuredItems": [
             {
               "image": "./imgs/abiliofrangos_sopa.jpg",
@@ -238,14 +238,14 @@
           ],
           "pickedForYou": [
             {
-              "image": "./imgs/abiliofrangos_rojoes.jpg",
+              "image": "./imgs/abiliofrangos_rojoes.webp",
               "id": "rojoeesverduras",
               "name": "ROJÕES COM VERDURAS",
               "price": 16.50,
               "description": "Indulge in the rich flavors of rojões served with a medley of fresh and seasoned vegetables."
             },
             {
-              "image": "./imgs/abiliofrangoss_chanfana.jpg",
+              "image": "./imgs/abiliofrangos_chanfana.webp",
               "id": "caçoilachanfana",
               "name": "CHANFANA EM CAÇOILA",
               "price": 55.00,

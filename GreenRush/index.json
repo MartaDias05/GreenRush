@@ -204,30 +204,5 @@
         "name" : "Pizzarte", 
         "description" : "€0.90 Delivery fee · 30-50 MINS · €",
         "rating" : "4.6"
-    },
-    {
-        "image":"./imgs/pizzahut.jpeg",
-        "name":"Pizzahut(Fórum de Aveiro)",
-        "description":"€2.40 Delivery fee · 20-35 MINS · €",
-        "rating":"4.5"
-    },
-    {
-        "image":"./imgs/kyotohouse.jpeg",
-        "name":"Kyoto House",
-        "description":"€1.90 Delivery fee · 20-35 MINS · €",
-        "rating":"4.7"
-    },
-    {
-        "image":"./imgs/lamozzarella.jpeg",
-        "name":"La Mozzarella",
-        "description":"€1.20 Delivery fee · 35-45 MINS · €",
-        "rating":"4.7"
-    },
-    {
-        "image":"./imgs/abilioFrangos.jpeg",
-        "name":"Abílio Marques",
-        "description":"€1.40 Delivery fee · 20-35 MINS · €",
-        "rating":"4.5"
     }
-
 ]
