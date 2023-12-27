@@ -1,5 +1,22 @@
 //-------------------FETCH RESTAURANTS FROM JSON FILE-------------------//
+let restaurantDetFI = "";
+let restaurantDetP4Y = "";
+let restaurants = "";
+let restaurant = "";
 
+function loadRestaurant(restaurantName) {
+    let realRestaurantName = restaurantName[0].id;
+    // Find the restaurant in the JSON data based on its name
+    let selectedRestaurant = restaurants.find(restaurant => restaurant.name === realRestaurantName);
+
+    if (selectedRestaurant) {
+        // Redirect to "restaurantDetails.html"
+        location.replace("restaurantDetails.html");
+
+        // Store the selected restaurant data in localStorage for use in the next page
+        localStorage.setItem('selectedRestaurant', JSON.stringify(selectedRestaurant));
+    }
+}
 
 //New xmlhttp object that holds all methods and properties
 let http = new XMLHttpRequest();
@@ -13,16 +30,18 @@ http.send()
 http.onload = function(){
     if (this.readyState == 4 && this.status == 200){ //If the response is successful
         //Parse the json data and convert it to a js array
-        let restaurants = JSON.parse(this.responseText);
-        
+        restaurants = JSON.parse(this.responseText);
+    
         //empty variable to store the incoming data
         let output = "";
 
         //loop through the restaurants and add an html strucutre to the page:
         for (let restaurant of restaurants){
+
+
             output += `
             
-            <div id="${restaurant.name}" onclick="goTo${restaurant.name}()" class="listings-grid-element">
+            <div id="${restaurant.name}" onclick="loadRestaurant(${restaurant.name})" class="listings-grid-element">
                 <div class="image">
                     <img src="${restaurant.image}" alt="${restaurant.name}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden; cursor: pointer;" id="${restaurant.name}" onmouseenter="hovering_effect('${restaurant.name}')" onmouseleave="reset_hovering_effect('${restaurant.name}')">
                 </div>
@@ -40,9 +59,16 @@ http.onload = function(){
             </div>
             
             `;
+
+
         };
 
-        document.getElementById('nearYouGrid').innerHTML = output;
-        console.log(document.getElementById('nearYouGrid').innerHTML = output);
+        console.log(document.URL);
+        if ( document.URL.includes("index.html") ) {
+            document.getElementById('nearYouGrid').innerHTML = output;   
+        }
+        
+        
     };
 };
+

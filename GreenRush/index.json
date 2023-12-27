@@ -3,19 +3,201 @@
         "image" : "./imgs/subenshi.jpeg",
         "name" : "Subenshi", 
         "description" : "€0.90 Delivery fee · 30-50 MINS · €",
-        "rating" : "4.8"
+        "bio" : "4.8 (72 ratings) · Japanese ·  €€",
+        "rating" : "4.8",
+        "featuredItems" : [
+            {
+                "image" : "./imgs/menu_benshi_m_big_h.jpg",
+                "id" : "menuBenshi",
+                "name" : "Menu Benshi",
+                "price" : 23.95,
+                "description" : "Harmoniosa combinação de diversas peças de Sushi Fusão e Sashimi, à escolha do Sushiman / Menu de 26 unidades"
+            },
+            {
+                "image" : "./imgs/menu_kaishi_l_big_h.jpg",
+                "id" : "menuKaishi",
+                "name" : "Menu Kaishi",
+                "price" : 37.95,
+                "description" : "Variedade balanceada de peças de Sushi Tradicional e Sashimi, à escolha do Sushiman / Menu de 20 unidades"
+            },
+            {
+                "image" : "./imgs/fonte_nova_big_h.jpg",
+                "id" : "fonteNova",
+                "name" : "Fonte Nova",
+                "price" : 7.90,
+                "description" :"Uramaki com salmão, camarão tempura, alho francês tempura, molho teriyaki e furikake noritama"
+            },
+            {
+                "image" : "./imgs/moliceiro_big_h.jpg",
+                "id" : "moliceiro",
+                "name" : "Moliceiro",
+                "price" : 7.90,
+                "description" : "Uramaki com salmão, morango, manga e cream cheese, coberto em fino salmão braseado e cebolinho"
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "./imgs/sashimi_fusion_xl_big_h.jpg",
+                "id" : "fusion",
+                "name" : "Fusion",
+                "price" : 34.90,
+                "description" : "Seleção de sashimi premium à escolha do sushiman"
+            },
+            {
+                "image" : "./imgs/sashimi_single_big_h.jpg",
+                "id" : "sashimiSingle",
+                "name" : "Sashimi Single",
+                "price" : 7.00,
+                "description" : "Sashimi à escolha do cliente (excepto atum rabilho)"
+            },
+            {
+                "image" : "./imgs/sashimi_red_eyes_big_h.jpg",
+                "id" : "redEyes",
+                "name" : "Red Eyes",
+                "price" : 11.90,
+                "description" : "Rolinhos de salmão braseado com caviar e cebolinho, recheados com camarão e cream cheese, servidos em colheres"
+            },
+            {
+                "image" : "./imgs/gambas_subenshi_big_h.jpg",
+                "id" : "gambas",
+                "name" : "Gambas subenshi",
+                "price" : 12.95,
+                "description" : "Gamba selvagem de moçambique tempura com amêndoa laminada e cebolinho"
+            }
+        ]
     },
     {
         "image" : "./imgs/ramona.jpeg",
         "name" : "Ramona", 
         "description" : "€1.20 Delivery fee · 20-35 MINS · €",
-        "rating" : "4.4"
+        "rating" : "4.4",
+        "bio" : "4.4 (120 ratings) · Burgers ·  €€ ",
+        "featuredItems" : [
+            {
+                "image" : "./imgs/batatas.jpg",
+                "id" : "doseBatatas",
+                "name" : "Dose de Batatas",
+                "price" : 2.95,
+                "description" : "Batatas com molho Ramona"
+            },
+            {
+                "image" : "./imgs/ramonaBurger.jpg",
+                "id" : "ramonaBurger",
+                "name" : "Hamburger Ramona",
+                "price" : 4.95,
+                "description" : "Hamburger de vaca com fiambre, queijo e bacon"
+            },
+            {
+                "image" : "./imgs/vegetarian.jpg",
+                "id" : "vegetarian",
+                "name" : "Hamburger Vegetariano",
+                "price" : 4.90,
+                "description" :"Hamburger vegetariano com tomate e queijo"
+            },
+            {
+                "image" : "./imgs/misto.jpg",
+                "id" : "misto",
+                "name" : "Hamburger Misto",
+                "price" : 4.10,
+                "description" : "Hamburger de vaca com fiambre e fiambre."
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "./imgs/ramonaOvo.jpg",
+                "id" : "ramonaOvo",
+                "name" : "Ramona com ovo",
+                "price" : 5.10,
+                "description" : "O tradicional Ramona mas com um toque adicional de ovo."
+            },
+            {
+                "image" : "./imgs/misto.jpg",
+                "id" : "misto",
+                "name" : "Hamburger Misto",
+                "price" : 4.10,
+                "description" : "Hamburger de vaca com fiambre e fiambre."
+            },
+            {
+                "image" : "./imgs/batatas.jpg",
+                "id" : "doseBatatas",
+                "name" : "Dose de Batatas",
+                "price" : 2.95,
+                "description" : "Batatas com molho Ramona"
+            },
+            {
+                "image" : "./imgs/vegetarian.jpg",
+                "id" : "vegetarian",
+                "name" : "Hamburger Vegetariano",
+                "price" : 4.90,
+                "description" :"Hamburger vegetariano com tomate e queijo"
+            }
+        ]
     }, 
     {
         "image" : "./imgs/clandestino.jpeg",
         "name" : "Clandestino", 
         "description" : "€1.90 Delivery fee · 35-45 MINS · €",
-        "rating" : "4.5"
+        "rating" : "4.5",
+        "featuredItems" : [
+            {
+                "image" : "./imgs/prego.webp",
+                "id" : "bitoque",
+                "name" : "Bitoque à clandestino",
+                "price" : 11.75,
+                "description" : "Bife de vaca, ovo estrelado, molho especial clandestino (normal/picante), arroz, salada e batata palito rustico."
+            },
+            {
+                "image" : "./imgs/francesinha.webp",
+                "id" : "francesinha",
+                "name" : "Francesinha Clandestino",
+                "price" : 11.50,
+                "description" : "Pão de forma, bife de vaca, ovo, bacon, linguiça, salsichão, queijo, molho especial clandestino (normal/picante) e batata palito rustico."
+            },
+            {
+                "image" : "./imgs/calzone.avif",
+                "id" : "calzone",
+                "name" : "Calzone Meatlovers",
+                "price" : 11.20,
+                "description" :"Mozzarella Fior di Latte, chourição, salsichão, bacon, carne picada e molho de francesinha."
+            },
+            {
+                "image" : "./imgs/pregoVazia.avif",
+                "id" : "prego",
+                "name" : "Prego da Vazia",
+                "price" : 7.90,
+                "description" : "Pão bolo do caco, escalopes corados, manteiga de ervas, bolo do caco, queijo ilha, presunto, mostarda, chips de batata ou palito rustico."
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "./imgs/pregoVazia.avif",
+                "id" : "prego",
+                "name" : "Prego da Vazia",
+                "price" : 7.90,
+                "description" : "Pão bolo do caco, escalopes corados, manteiga de ervas, bolo do caco, queijo ilha, presunto, mostarda, chips de batata ou palito rustico."
+            },
+            {
+                "image" : "./imgs/prego.webp",
+                "id" : "bitoque",
+                "name" : "Bitoque à clandestino",
+                "price" : 11.75,
+                "description" : "Bife de vaca, ovo estrelado, molho especial clandestino (normal/picante), arroz, salada e batata palito rustico."
+            },
+            {
+                "image" : "./imgs/francesinha.webp",
+                "id" : "francesinha",
+                "name" : "Francesinha Clandestino",
+                "price" : 11.50,
+                "description" : "Pão de forma, bife de vaca, ovo, bacon, linguiça, salsichão, queijo, molho especial clandestino (normal/picante) e batata palito rustico."
+            },
+            {
+                "image" : "./imgs/calzone.avif",
+                "id" : "calzone",
+                "name" : "Calzone Meatlovers",
+                "price" : 11.20,
+                "description" :"Mozzarella Fior di Latte, chourição, salsichão, bacon, carne picada e molho de francesinha."
+            }
+        ]
     },
     {
         "image" : "./imgs/pizzarte.png",
@@ -23,4 +205,5 @@
         "description" : "€0.90 Delivery fee · 30-50 MINS · €",
         "rating" : "4.6"
     }
+
 ]
