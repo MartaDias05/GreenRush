@@ -36,12 +36,11 @@ function validateForm() {
     // Find the user with the specified username
     var user = users.find(u => u.username === userNameInput);
 
-        alert('That username does not exist!');
     if (user === undefined) {
     } else if (userNameInput === user.username && passwordInput === user.password) {
         location.replace('index.html');
     } else {
-        alert('Wrong password!');
+        alert('Wrong password OR invalid username!');
     }
 }
 
