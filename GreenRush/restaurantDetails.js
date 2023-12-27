@@ -1,48 +1,86 @@
-//-------------------FETCH RESTAURANTS FROM JSON FILE-------------------//
+console.log(document.URL);
+let restaurantDetFI = "";
+let restaurantDetP4Y = "";
 
 
-//New xmlhttp object that holds all methods and properties
-let http = new XMLHttpRequest();
+//Fecth the selected restaurant
+selectedRestaurant = JSON.parse(localStorage.getItem('selectedRestaurant'));
+console.log(selectedRestaurant);
 
-http.open('get', 'restaurants.json', true);
+document.getElementById('banner').classList.add('banner' + selectedRestaurant.name);
+document.getElementById('header-restaurant-name').innerHTML = selectedRestaurant.name;
+document.getElementById('restaurant-info').innerHTML = selectedRestaurant.bio;
 
-//send the request
-http.send()
 
-//fetch the request
-http.onload = function(){
-    if (this.readyState == 4 && this.status == 200){ //If the response is successful
-        //Parse the json data and convert it to a js array
-        let restaurant = JSON.parse(this.responseText);
-        
-        //empty variable to store the incoming data
-        let output = "";
-
-        //loop through the restaurants and add an html strucutre to the page:
-        for (let restaurant of restaurant){
-            output += `
-            
-            <div id="${restaurant.name}" onclick="goTo${restaurant.name}()" class="listings-grid-element">
-                <div class="image">
-                    <img src="${restaurant.image}" alt="${restaurant.name}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden; cursor: pointer;" id="subenshi" onmouseenter="hovering_effect('subenshi')" onmouseleave="reset_hovering_effect('subenshi')">
-                </div>
-                <div style="padding: 1rem 0; margin-top: 1rem; display: flex; align-items: center; border-bottom: 1px solid #ddd;" class="text">
-                    <div class="text-title">
-                        <h5>${restaurant.name}</h5>
-                        <div class="info">
-                            <span style="font-size: small; color: rgb(84, 84, 84);">${restaurant.description}</span>
-                        </div>
-                    </div>
-                    <div class="rating" style="font-size: 0.8rem; margin-left: auto; background-color:rgb(231, 231, 231); border-radius: 50%; width: 30px; height: 30px; justify-content:center; align-items:center; display: flex;">
-                        <span>${restaurant.rating}</span>
+for (let featuredItem of selectedRestaurant.featuredItems){
+    console.log(featuredItem.name);
+    restaurantDetFI += `
+        <div id="${featuredItem.id}" class="listings-grid-element" onclick="loadProduct('${featuredItem.id}')">
+            <div class="image">
+                <img src="${featuredItem.image}" alt="${featuredItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
+            </div>
+            <div style="padding: 1rem 0; margin-top: 1rem; display: flex; align-items: center; border-bottom: 1px solid #ddd;" class="text">
+                <div class="text-title">
+                    <h5>${featuredItem.name}</h5>
+                    <div class="info">
+                        <span style="font-size: small; color: rgb(84, 84, 84);">€${featuredItem.price}</span>
                     </div>
                 </div>
             </div>
-            
-            `;
-        };
-
-        document.getElementById('nearYouGrid').innerHTML = output;
-        console.log(document.getElementById('nearYouGrid').innerHTML = output);
-    };
+        </div>
+    `;
 };
+
+for (let p4yItem of selectedRestaurant.pickedForYou){
+    console.log(p4yItem.name);
+    restaurantDetP4Y += `
+        <div id="${p4yItem.id}" class="listings-grid-element" onclick="loadProduct('${p4yItem.id}')">
+            <div class="image">
+                <img src="${p4yItem.image}" alt="${p4yItem.id}" style="height: 180px; width: 100%; object-fit: cover; border-radius: 20px; overflow: hidden;">
+            </div>
+            <div style="padding: 1rem 0; margin-top: 1rem; display: flex; align-items: center; border-bottom: 1px solid #ddd;" class="text">
+                <div class="text-title">
+                    <h5>${p4yItem.name}</h5>
+                    <div class="info">
+                        <span style="font-size: small; color: rgb(84, 84, 84);">${p4yItem.price}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+document.getElementById('FI').innerHTML += restaurantDetFI;
+document.getElementById('P4Y').innerHTML += restaurantDetP4Y;
+     
+
+function loadProduct(productID) {
+    console.log(productID);
+
+    // Find the restaurant in the JSON data based on its name
+    for(item of selectedRestaurant.featuredItems){
+        console.log(item);
+
+        if (item.id === productID) {
+            // Redirect to "restaurantDetails.html"
+            location.replace("productDetails.html");
+    
+            // Store the selected restaurant data in localStorage for use in the next page
+            localStorage.setItem('selectedProduct', JSON.stringify(item));
+        }
+    }
+
+    for(item of selectedRestaurant.pickedForYou){
+        console.log(item);
+
+        if (item.id === productID) {
+            // Redirect to "restaurantDetails.html"
+            location.replace("productDetails.html");
+    
+            // Store the selected restaurant data in localStorage for use in the next page
+            localStorage.setItem('selectedProduct', JSON.stringify(item));
+        }
+    }
+
+    
+}

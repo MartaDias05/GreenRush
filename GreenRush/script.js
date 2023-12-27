@@ -1,3 +1,13 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Retrieve the cart data from localStorage
+    let cartObjects = JSON.parse(localStorage.getItem('cartObjects')) || [];
+
+    // Update the HTML structure
+    updateCartHTML(cartObjects);
+});
+
 /*function checkLogin(){
     console.log("check login called")
 var user = localStorage.getItem('users')
@@ -55,6 +65,10 @@ function goToSubenshi() {
 
 function goToMain() {
     location.replace('index.html')
+}
+
+function goToRestaurantDetails() {
+    location.replace('restaurantDetails.html')
 }
 
 function goToMenuBenshi() {
@@ -148,9 +162,10 @@ function goToAccept(){
     location.replace('atualization_est.html');
 }
 
+//-----------------------------SHOPPING CART-----------------------------//
+
 let shoppingCart = document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick = () => {
-    console.log('here');
     shoppingCart.classList.toggle('active');
     if (shoppingCart.classList.contains('active')) {
         shoppingCart.style.right = '2rem';
@@ -160,11 +175,13 @@ document.querySelector('#cart-btn').onclick = () => {
     }
 }
 
-var quantity = 0;
+var quantity = parseInt(localStorage.getItem('quantity')) || 0;
 var quantityInput = document.getElementById('quantityInput');
+updateQuantity();
 console.log(quantityInput);
-var priceOfProduct = parseFloat(document.getElementById('price').innerHTML);
+var priceOfProduct = parseFloat(document.getElementById('price').value);
 console.log(priceOfProduct);
+
 var totalProductPrice = 0;
 var totalPrice = 0;
             
@@ -184,7 +201,12 @@ function decreaseQuantity() {
 
 function updateQuantity() {
     quantityInput.value = quantity;
+
+    // Save the quantity in localStorage --> This ensures that the quantity value persists through all the diferent pages
+    localStorage.setItem('quantity', quantity);
 }
+
+
 
 function updateCheckOutBtn(){
     totalProductPrice = 0;
@@ -192,38 +214,148 @@ function updateCheckOutBtn(){
     document.getElementById('checkout-btn').innerHTML = 'Add ' + quantity + ' to order · €' + totalProductPrice;
     console.log(totalProductPrice);
 }
-//remove item from cart by pressin the trash can
-function removeItemFromCart(id){    //For some reason the id is passing the hole html element. So just remove the html element itselg by doing id.remove();
-    id.remove();
-    totalPrice -= totalProductPrice;
-    document.getElementById('cart-total').innerHTML = 'Total: €' + totalPrice;
-}
 
-function addToCart(img, name, id){
 
-    //Check if the element already exists in cart. If it does, delete it.
-    if (document.getElementById(id) != null){
-        document.getElementById(id).remove();
+//remove item from cart by pressing the trash can
+function removeItemFromCart(id) {
+    // Fetch the existing cart data from localStorage
+    let cartObjects = JSON.parse(localStorage.getItem('cartObjects')) || [];
+
+    // Find the index of the item with the given id
+    const indexToRemove = cartObjects.findIndex(item => item.id === id);
+
+    if (indexToRemove !== -1) {
+        // Remove the item from the cartObjects array
+        cartObjects.splice(indexToRemove, 1);
+        // Save the updated cart data back to localStorage
+        localStorage.setItem('cartObjects', JSON.stringify(cartObjects));
+
+        // Update the HTML structure
+        updateCartHTML(cartObjects);
     }
 
-    //--- Adiciona uma nova linha ao elemento <div id="tasks"></div>
-    document.getElementById('box').innerHTML += '<div id="'+id+'" class="content" style="display: flex; align-items: center;">' + 
-    '<div class="cart-img" style="background-image: url(./' + img + ');"></div>' + 
-    '<div style="margin-left: 1rem;">' + 
-    '<h3 style="font-size: medium;">' + name + '</h3>' + 
-    '<span style="font-size: small; margin-right: 10px;" class="price">Price: ' + totalProductPrice + '</span>' +
-    '<span style="font-size: small;" class="quantity">Qty: ' + quantity + '</span>' +
-    '</div>' + 
-    '<div style="margin-left: 2rem;" onclick="removeItemFromCart('+id+');"><i class="fa-solid fa-trash"></i>' +
-    '</div>' +
-    '</div>';
+    // Additional code if you want to update total price or perform other actions
+    let totalPrice = 0;
+    for (let product of cartObjects) {
+        totalPrice += product.price * product.quantity;
+    }
+    document.getElementById('cart-total').innerHTML = 'Total: €' + totalPrice;
+}
 
-    //Calculate the total price of the cart & display it
-    totalPrice = 0;
-    totalPrice += totalProductPrice;
+
+
+function addToCart(img, name, id, price) {
+
+    console.log(quantity);
+
+    // Fetch the existing cart data from localStorage
+    let cartObjects = JSON.parse(localStorage.getItem('cartObjects')) || [];
+
+    // Check if the name is repeated before adding to the cart
+    if (isNameRepeated(cartObjects, name)) {
+        console.log('Name is repeated:', name);
+
+        // Find the repeated item and update its quantity
+        for (let i = 0; i < cartObjects.length; i++) {
+            if (cartObjects[i].name === name) {
+                cartObjects[i].quantity = parseInt(quantityInput.value);
+                updateCartHTML(cartObjects);
+                return;
+            }
+        }
+
+        return;
+    }
+
+    // Update the cart data
+    cartObjects.push({ "name": name, "image": img, "id": id, "price": price, "quantity": quantity });
+
+    // Save the updated cart data back to localStorage
+    localStorage.setItem('cartObjects', JSON.stringify(cartObjects));
+    console.log(cartObjects)
+
+    // Update the HTML structure
+    updateCartHTML(cartObjects);
+}
+
+function updateCartHTML(cartObjects) {
+    let output = "";
+    let totalPrice = 0;
+
+    for (let product of cartObjects) {
+        output += `
+        <div id="${product.id}" class="content" style="display: flex; align-items: center;">  
+            <div class="cart-img" style="background-image: url(${product.image});"></div> 
+            <div style="margin-left: 1rem;">
+                <h3 style="font-size: medium;">${product.name}</h3>
+                <span style="font-size: small; margin-right: 10px;" class="price">Price: ${product.price * product.quantity}</span> 
+                <span style="font-size: small;" class="quantity">Qty: ${product.quantity}</span>
+            </div> 
+            <div style="margin-left: 2rem;" onclick="removeItemFromCart('${product.id}');"><i class="fa-solid fa-trash"></i></div> 
+        </div>`;
+
+        totalPrice += product.price * product.quantity;
+    }
+    // Display the total price of the cart 
     document.getElementById('cart-total').innerHTML = 'Total: €' + totalPrice;
 
+    // Build the cart 
+    document.getElementById('box').innerHTML = output;
 }
+
+
+
+
+
+/*
+function addToCart(img, name, id, price) {
+
+    console.log(quantity);
+
+    // Fetch the existing cart data from localStorage
+    let cartObjects = JSON.parse(localStorage.getItem('cartObjects')) || [];
+
+    if (isNameRepeated(cartObjects, name)) {
+        console.log('Name is repeated:', name);
+        return;
+    }
+
+    // Update the cart data
+    cartObjects.push({ "name": name, "image": img, "id": id, "price": price});
+
+    // Save the updated cart data back to localStorage
+    localStorage.setItem('cartObjects', JSON.stringify(cartObjects));
+    console.log(cartObjects)
+
+    // Update the HTML structure
+    let output = "";
+    let totalPrice = 0;
+
+    for (let product of cartObjects) {
+
+        output += `
+        <div id="${product.id}" class="content" style="display: flex; align-items: center;">  
+            <div class="cart-img" style="background-image: url(${product.image});"></div> 
+                <div style="margin-left: 1rem;">
+                    <h3 style="font-size: medium;">${product.name}</h3>
+                    <span style="font-size: small; margin-right: 10px;" class="price">Price: ${product.price * quantity}</span> 
+                    <span style="font-size: small;" class="quantity">Qty: ${quantity}</span>
+                </div> 
+                <div style="margin-left: 2rem;" onclick="removeItemFromCart(${product.id});"><i class="fa-solid fa-trash"></i> 
+            </div> 
+        </div>`;
+
+        totalPrice += product.price
+    }
+    //display the total price of the cart 
+    document.getElementById('cart-total').innerHTML = 'Total: €' + totalPrice;
+
+    //Build the cart 
+    document.getElementById('box').innerHTML = output;
+}
+
+
+*/
 
 function search() {
     let filter = document.getElementById('find').value.toUpperCase();
@@ -241,3 +373,21 @@ function search() {
     }
 }
 
+
+function isNameRepeated(arr, name) {
+    const seenNames = new Set();
+  
+    for (const obj of arr) {
+      if (obj.name === name) {
+        // Name is repeated
+        console.log('here');
+        console.log(seenNames);
+        return true;
+      }
+  
+      seenNames.add(obj.name);
+    }
+  
+    // Name is not repeated
+    return false;
+}

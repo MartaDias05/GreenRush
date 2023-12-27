@@ -160,11 +160,11 @@ header{
     background-position: center center;
 }
 
-#subenshi-top {
+#restaurant-top {
     margin-top: 1rem;
 }
 
-#subenshi-info{
+#restaurant-info{
     font-size: small;
     color: var(--color-darkGray);
 }

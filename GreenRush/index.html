@@ -25,8 +25,8 @@
                 <div class="header-option" style="cursor: pointer;">
                     <i class="fa-solid fa-location-dot"></i> Aveiro
                 </div>
-                <div class="header-option" style="cursor: pointer;">
-                    <div onclick="goToCart()"><i class="fa-solid fa-cart-shopping" ></i> Cart</div>
+                <div class="header-option" style="cursor: pointer;" id="cart-btn">
+                    <div><i class="fa-solid fa-cart-shopping" ></i> Cart</div>
                 </div>
             </div>
             <div class="searchBar">
@@ -44,21 +44,11 @@
                 <!--CART-->
                 <div class="shopping-cart" style="transition: .4s linear; background-color: #fff; width: 20rem; display: inline; position: absolute; top: 15%; right: -110%; padding: 1rem; border: 1px solid lightgray; border-radius: 0.5rem;">
                     <div id="box" class="box">
-                        <div class="content" style="display: flex; align-items: center;">
-                            <div class="cart-img" style="background-image: url(imgs/menu_benshi_m_big_h.jpg);"></div>
-                            <div style="margin-left: 1rem;">
-                                <h3 style="font-size: medium;">MenuBenshi</h3>
-                                <span style="font-size: small;" class="price">Price: xxx</span>
-                                <span style="font-size: small;" class="quantity">Qty: xxx</span>
-                            </div>
-                            <div style="margin-left: 2rem;">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </div>
+                        
                     </div>
 
-                    <div class="total" style="font-size: 1rem; padding: 1rem 0; text-align: center;">total: xxx</div>
-                    <a href="#" class="btn btn-outline-success" style="font-size: small; cursor: pointer; display: block;">Checkout</a>
+                    <div id="cart-total" class="total" style="font-size: 1rem; padding: 1rem 0; text-align: center;">Total: €0.0</div>
+                    <a href="checkout.html" class="btn btn-outline-success" style="font-size: small; cursor: pointer; display: block;">Checkout</a>
                 </div>
             </div>
         </div>
@@ -157,8 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div id="nearYouGrid" class="listings-grid" style="margin-top: 1.5rem;">             
-            </div>
+            <div id="nearYouGrid" class="listings-grid" style="margin-top: 1.5rem;"></div>
         </div>
     </div>
 
