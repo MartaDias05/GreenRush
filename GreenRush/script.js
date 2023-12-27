@@ -165,7 +165,9 @@ function goToAccept(){
 //-----------------------------SHOPPING CART-----------------------------//
 
 let shoppingCart = document.querySelector('.shopping-cart');
+
 document.querySelector('#cart-btn').onclick = () => {
+    console.log('here');
     shoppingCart.classList.toggle('active');
     if (shoppingCart.classList.contains('active')) {
         shoppingCart.style.right = '2rem';

@@ -24,7 +24,7 @@
                 <div class="header-option">
                     <i class="fa-solid fa-location-dot"></i> Aveiro
                 </div>
-                <div class="header-option">
+                <div class="header-option" id="cart-btn">
                     <i class="fa-solid fa-cart-shopping"></i> Cart
                 </div>
             </div>
@@ -36,6 +36,18 @@
                 <div class="header-option">
                     <i class="fa-solid fa-user"></i>
                     Log in
+                </div>
+                <div class="header-option" style="cursor: pointer;">
+                    <a href="Usersettings.html"><i class="fa-solid fa-gear"></i></a> 
+                </div>
+                <!--CART-->
+                <div class="shopping-cart" style="transition: .4s linear; background-color: #fff; width: 20rem; display: inline; position: absolute; top: 15%; right: -110%; padding: 1rem; border: 1px solid lightgray; border-radius: 0.5rem;">
+                    <div id="box" class="box">
+                        
+                    </div>
+
+                    <div id="cart-total" class="total" style="font-size: 1rem; padding: 1rem 0; text-align: center;">Total: €0.0</div>
+                    <a href="checkout.html" class="btn btn-outline-success" style="font-size: small; cursor: pointer; display: block;">Checkout</a>
                 </div>
             </div>
         </div>
