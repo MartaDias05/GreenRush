@@ -27,7 +27,7 @@ function addUser(){
 function validateForm() {
     event.preventDefault();
 
-    userNameInput = document.getElementById('username').value;
+    var userNameInput = document.getElementById('username').value;
     var passwordInput = document.getElementById('password').value;
 
     // Retrieve the user array from local storage
@@ -36,11 +36,10 @@ function validateForm() {
     // Find the user with the specified username
     var user = users.find(u => u.username === userNameInput);
 
-    if (user === undefined) {
         alert('That username does not exist!');
+    if (user === undefined) {
     } else if (userNameInput === user.username && passwordInput === user.password) {
         location.replace('index.html');
-        localStorage.clear();
     } else {
         alert('Wrong password!');
     }
