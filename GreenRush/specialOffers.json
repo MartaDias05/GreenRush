@@ -1,0 +1,271 @@
+[
+    {
+        "image":"./imgs/pizzahut.jpeg",
+        "name":"Pizzahut(Fórum de Aveiro)",
+        "description":"€2.40 Delivery fee · 20-35 MINS · €",
+        "bio" : "4.5 (132 ratings) · Pizza ·  €€",
+        "rating":"4.5",
+        "featuredItems" : [
+            {
+                "image" : ".imgs/margarita_pizzahut.jpg",
+                "id" : "margarita",
+                "name" : "Margarita",
+                "price" : 7.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella e Orégãos (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/cheeeseham_pizzahut.jpg",
+                "id" : "cheeseham",
+                "name" : "CheeseHam",
+                "price" : 9.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella, Orégãos, Fiambre e Mozzarella Extra (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/serrana_pizzahut.jpg",
+                "id" : "serrana",
+                "name" : "Serrana",
+                "price" : 9.45,
+                "description" :"Molho de Tomate, Queijo 100% Mozzarella, Orégãos, Chouriço, Cogumelos Frescos e Azeitonas (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/havaiana_pizzahut.jpg",
+                "id" : "havaiana",
+                "name" : "Havaiana",
+                "price" : 11.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella, Orégãos, Atum, Camarão e Ananás (imagem ilustrativa)."
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "./imgs/portuguesa_pizzahut.png",
+                "id" : "portuguesa",
+                "name" : "Portuguesa",
+                "price" : 10.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella, Orégãos, Chouriço, Mistura de Pimentos e Ovo Cozido (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/suprema_pizzahut.jpg",
+                "id" : "suprema",
+                "name" : "Suprema",
+                "price" : 11.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella, Orégãos, Pepperoni, Carne de Vaca, Mistura de Pimentos, Cogumelos e Cebola (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/barbecue_pizzahut.webp",
+                "id" : "barbecue",
+                "name" : "Barbecue",
+                "price" : 11.45,
+                "description" : "Molho Barbecue, Queijo 100% Mozzarella, Orégãos, Bacon, Carne de Vaca e Cebola (imagem ilustrativa)."
+            },
+            {
+                "image" : "./imgs/prosciutto_pizzahut.png",
+                "id" : "prosciutto",
+                "name" : "Prosciutto Gourmet",
+                "price" : 11.45,
+                "description" : "Molho de Tomate, Queijo 100% Mozzarella, Presunto, Queijo de Cabra, Cebola Crocante e Orégãos (Imagem ilustrativa)."
+            }
+        ]
+    },
+    {
+        "image" : "./imgs/kyotohouse.jpeg",
+        "name" : "Kyoto House", 
+        "description":"€1.90 Delivery fee · 20-35 MINS · €",
+        "rating" : "4.7",
+        "bio" : "4.7 (89 ratings) · Japanese ·  €€ ",
+        "featuredItems" : [
+            {
+                "image" : "./imgs/nigiri_kyotohouse.jpg",
+                "id" : "nigiri",
+                "name" : "Nigiri (2 Pieces)",
+                "price" : 2.90,
+                "description" : "Nigiri de Atum"
+            },
+            {
+                "image" : "./imgs/ebitempuramaki_kyotohouse.jpg",
+                "id" : "ebiMakimono",
+                "name" : "Makimono",
+                "price" : 4.50,
+                "description" : "Ebi Tempura Maki"
+            },
+            {
+                "image" : "./imgs/salmontemaki_kyotohouse.jpg",
+                "id" : "salmonTemaki",
+                "name" : "Temaki",
+                "price" : 4.90,
+                "description" :"Salmon Temaki"
+            },
+            {
+                "image" : "./imgs/gyuudon_kyotohouse.jpg",
+                "id" : "gyuUdon",
+                "name" : "Udon",
+                "price" : 9.50,
+                "description" : "Gyu Udon"
+            }
+        ],
+        "pickedForYou" : [
+            {
+                "image" : "./imgs/yakigyutori_kyotohouse.jpg",
+                "id" : "kishiyTori",
+                "name" : "Kishiy",
+                "price" : 11.90,
+                "description" : "Yaki Gyu Tori"
+            },
+            {
+                "image" : "./imgs/chauchau_kyotohouse.jpg",
+                "id" : "chauchaurice",
+                "name" : "Yangzhou fried rice",
+                "price" :   3.90,
+                "description" : "Traditional chinese rice"
+            },
+            {
+                "image" : "./imgs/cheesecake_kyotohouse.jpg",
+                "id" : "cheesecakekyoto",
+                "name" : "Cheesecake",
+                "price" : 4.50,
+                "description" : "desert"
+            },
+            {
+                "image" : "./imgs/sushi_kyotohouse.jpg",
+                "id" : "sushisashimimix",
+                "name" : "Sushi/Sashimi Mix (27 Pieces)",
+                "price" : 18.90,
+                "description" : "mix of sushi and sashimi"
+            }
+        ]
+    }, 
+    {
+        "image":"./imgs/lamozzarella.jpeg",
+        "name":"La Mozzarella",
+        "description":"€1.20 Delivery fee · 35-45 MINS · €",
+        "rating":"4.7",
+        "bio" : "4.7 (214 ratings) · Italian ·  €€ ",
+        "featuredItems" : [
+            {
+                "image" : "./imgs/4estaçoes_lamozarella.webp",
+                "id" : "4seasons",
+                "name" : "4 Estações",
+                "price" : 12.50,
+                "description" : "MOLHO DE TOMATE, MOZZARELLA, FIAMBRE, COGUMELOS FRESCOS, ALCACHOFRAS, PIMENTOS, AZEITONAS E OREGÃOS"
+            },
+            {
+                "image" : "./imgs/4queijos_lamozarella.webp",
+                "id" : "4cheeses",
+                "name" : "4 Queijos",
+                "price" : 12.50,
+                "description" : "MOLHO DE TOMATE, MOZZARELLA, CHEDDAR, GORGONZOLA, BRIE E OREGÃOS"
+            },
+            {
+                "image" : "./imgs/diabola_lamozarella.webp",
+                "id" : "diabola",
+                "name" : "Diabola",
+                "price" : 12.50,
+                "description" : "MOLHO DE TOMATE, MOZZARELLA, AZEITONAS, PEPPERONI PICANTE, PIMENTOS PADRÃO E OREGÃOS"
+            },
+            {
+                "image" : "./imgs/lamozarella_lamozarella.jpg",
+                "id" : "lamozarellapizza",
+                "name" : "La Mozzarella",
+                "price" : 12.50,
+                "description" : "MOLHO DE TOMATE, MOZZARELLA FRESCA, MANJERICÃO E OREGÃOS"
+            }
+        ],
+        "pickedForYou":[
+            {
+                "image" : "./imgs/lasagna_lamozarella.webp",
+                "id" : "lasagna",
+                "name" : "Lasanha no Forno",
+                "price" : 8.90,
+                "description" : "MASSA FRESCA, MOLHO DE TOMATE, MOLHO BECHAMEL, CARNE BOLONHESA, PARMESÃO, MOZZARELLA E OREGÃOS"
+            },
+            {
+                "image" : "./imgs/esparguetebolonhosa_lamozarella.jpg",
+                "id" : "esparguete",
+                "name" : "Esparguete Bolonhesa",
+                "price" : 8.90,
+                "description" : "ESPARGUETE, CARNE BOLONHESA, PARMESÃO, AZEITE E FOLHA DE MANJERICÃO"
+            },
+            {
+                "image" : "./imgs/macarraoalpesto_mozarella.webp",
+                "id" : "macarraoPesto",
+                "name" : "Macarrão al Pesto",
+                "price" : 8.90,
+                "description" : "PENNE, PESTO, TOMATE SECO E PARMESÃO"
+            },
+            {
+                "image" : "./imgs/frangoparmegiana_lamozarella.webp",
+                "id" : "",
+                "name" : "Frango Parmigiana – Acompanhado com Massa",
+                "price" : 8.90,
+                "description" : "MOLHO DE TOMATE, NATAS, FIAMBRE, LOMBINHO DE FRANGO, PARMESÃO, MOZZARELLA GRATINADA E OREGÃOS"
+            }
+        ]
+    },
+    {
+        "image":"./imgs/abilioFrangos.jpeg",
+        "name":"Abílio Marques",
+        "description":"€1.40 Delivery fee · 20-35 MINS · €",
+        "rating":"4.5",
+        "bio" : "4.5 (53 ratings) · Barbecue and Portuguese cuisine ·  €€ ",
+        "featuredItems": [
+            {
+              "image": "./imgs/abiliofrangos_sopa.jpg",
+              "id": "dailysoup",
+              "name": "SOPA DO DIA/CANJA",
+              "price": 3.25,
+              "description": "A comforting bowl of daily soup or canja to warm your soul. Made with fresh ingredients and love."
+            },
+            {
+              "image": "./imgs/abiliofrangos_arrozmalandro.jpg",
+              "id": "malandrorice",
+              "name": "ARROZ MALANDRO",
+              "price": 8.50,
+              "description": "Delicious malandro rice, cooked to perfection and served with flavorful accompaniments."
+            },
+            {
+              "image": "./imgs/abiliofrangos_frango.jpg",
+              "id": "chickenabilio",
+              "name": "FRANGUITO DE CHURRASCO",
+              "price": 8.00,
+              "description": "Tender and juicy grilled chicken, marinated and seasoned with our special churrasco blend."
+            },
+            {
+              "image": "./imgs/abiliofrangos_entrecosto.jpg",
+              "id": "grilledsomething",
+              "name": "ENTRECOSTO GRELHADO",
+              "price": 18.00,
+              "description": "Savor the smoky goodness of our grilled entrecosto. A perfect choice for meat lovers."
+            }
+          ],
+          "pickedForYou": [
+            {
+              "image": "./imgs/abiliofrangos_rojoes.jpg",
+              "id": "rojoeesverduras",
+              "name": "ROJÕES COM VERDURAS",
+              "price": 16.50,
+              "description": "Indulge in the rich flavors of rojões served with a medley of fresh and seasoned vegetables."
+            },
+            {
+              "image": "./imgs/abiliofrangoss_chanfana.jpg",
+              "id": "caçoilachanfana",
+              "name": "CHANFANA EM CAÇOILA",
+              "price": 55.00,
+              "description": "A gastronomic delight, our chanfana em caçoila is slow-cooked to perfection for an exquisite dining experience."
+            },
+            {
+              "image": "./imgs/abiliofrangos_bifinhos.jpeg",
+              "id": "porkbifinhos",
+              "name": "BIFINHOS DE PORCO",
+              "price": 16.50,
+              "description": "Succulent pork bifinhos, expertly prepared and seasoned for a delightful taste sensation."
+            },
+            {
+              "image": "./imgs/abiliofrangos_bacalhau.jpg",
+              "id": "brasabacalhau",
+              "name": "BACALHAU NA BRASA",
+              "price": 18.00,
+              "description": "Experience the smoky goodness of our grilled bacalhau. A must-try for seafood enthusiasts."
+            }
+          ]
+        }
+
+]

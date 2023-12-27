@@ -63,35 +63,24 @@ function getAll() {
 }
 
 function updateButtonHref() {
-    // Get the value from localStorage
     const localStorageValue = localStorage.getItem('acctype');
+    const button = document.getElementById('leaveSettings');
 
-    // Get the button element
-    const button = document.getElementById('leaveSettings')
-
-    // Check the localStorage value and update the href accordingly
     if (localStorageValue === 'courier') {
-        button.href = 'est_index.html';
+        button.onclick = function() {
+            location.href = 'est_index.html';
+        };
     } else if (localStorageValue === 'restaurant') {
-        button.href = 'restaurant.html';
+        button.onclick = function() {
+            location.href = 'restaurant.html';
+        };
     } else {
-        // Default href if the localStorage value is not recognized
-        button.href = 'index.html';
+        button.onclick = function() {
+            location.href = 'index.html';
+        };
     }
 }
 
-function typeButton(buttonId){
-    changeButtonStyle(buttonId)
-    resetOtherButtons(buttonId)
-    if(buttonId==='client'){
-        beClient();
-    }
-    if(buttonId==='courier'){
-        beCourier();
-    }
-    if(buttonId==='restaurant'){
-        beRestaurant();
-    }
-    }
 
 getAll()
+updateButtonHref()
